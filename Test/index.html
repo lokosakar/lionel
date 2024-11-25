@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 Cerita Anekdot Lucu</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <header>
+        <h1>15 Cerita Anekdot Lucu</h1>
+        <p>Berikut adalah kumpulan cerita anekdot yang bisa membuatmu tertawa. Semoga hari-harimu semakin ceria!💖💖</p>
+    </header>
+    
+    <section class="anecdotes">
+        <div class="button-container">
+            <button onclick="showAnecdote(1)">Lionel liauw</button>
+            <button onclick="showAnecdote(2)">Dikejar anjing</button>
+            <button onclick="showAnecdote(3)">Banyak gaya</button>
+            <button onclick="showAnecdote(4)">Hujan</button>
+            <button onclick="showAnecdote(5)">Jatoh motor 5</button>
+            <button onclick="showAnecdote(6)">Lempar raket</button>
+            <button onclick="showAnecdote(7)">Masuk got</button>
+            <button onclick="showAnecdote(8)">Hp jatoh ke got</button>
+            <button onclick="showAnecdote(9)">Hp hamil</button>
+            <button onclick="showAnecdote(10)">Batagor</button>
+            <button onclick="showAnecdote(11)">Makan ayam bali di sekolah</button>
+            <button onclick="showAnecdote(12)">smp</button>
+            <button onclick="showAnecdote(13)">Masih sd</button>
+            <button onclick="showAnecdote(14)">Pukul anjing</button>
+            <button onclick="showAnecdote(15)">Tendang kucing</button>
+        </div>
+        
+        <div id="anecdote-container" class="anecdote-content"></div>
+    </section>
+    
+    <footer>
+        <p>&copy; Sungguh bahagia jika kita hidup tanpa membenci di antara orang-orang yang membenci; di antara orang-orang yang membenci, kita hidup tanpa benci</p>
+    </footer>
+    
+    <script>
+        const anecdotes = [
+            "Suatu hari saat di Ekayana saya sedang nginep karena volunteer. Saya buka baju karena panas, lalu teman-teman main Uno dengan berisik. Para koor datang, malah mengira saya yang bikin onar. Pagi-pagi, mereka hanya ingat saya buka baju, bukan teman yang main Uno.",
+            "Seorang anak bertanya kepa\"",
+            "Guru bertanya, \"Siapa yang bisa menjelaskan apa itu matematika?\" Seorang murid menjawab, \"Matematika itu seperti hidup. Penuh angka yang terus bertambah!\"",
+            "Pelayan restoran lelah berkata, \"Menjadi pelayan itu seperti hidup, selalu ada di tengah tapi jarang diapresiasi.\" Temannya menjawab, \"Mungkin perlu lebih banyak minta tips!\"",
+            "Seorang anak kecil bertanya pada penjual es krim, \"Kenapa es krim suka meleleh?\" Penjual es krim menjawab, \"Karena dia tidak suka tekanan!\"",
+            "Seorang pria berkendara dengan mobil baru. Temannya berkata, \"Mobil ini bagus, tapi sepertinya butuh rem baru.\" \"Kenapa?\" \"Karena saat kamu berhenti, mobilnya belum siap!\"",
+            "Seorang pria berkata, \"Saya bisa melompat lebih tinggi dari bangunan.\" Temannya terkejut. Pria itu menjawab, \"Iya, bangunan tidak bisa melompat!\"",
+            "Tukang pos berkata, \"Saya selalu mengantarkan surat ke orang yang tepat.\" Pelanggan: \"Tapi ini salah alamat!\" Tukang pos: \"Itu latihan agar tetap sabar.\"",
+            "Siswa berkata, \"Saya benci sekolah!\" Temannya: \"Kenapa?\" \"Karena tiap hari ada tugas baru bikin nggak betah!\"",
+            "Seorang anak berkata, \"Ayah, komputer ini pintar.\" Sang ayah: \"Iya, tapi tidak ingat membuang sampahnya!\"",
+            "Pria bertanya pada polisi, \"Pak, saya melanggar aturan?\" Polisi: \"Tidak, tapi bawa SIM dan STNK, bukan senyum manis saja!\"",
+            "Anak bertanya, \"Kenapa ayam menyebrang jalan?\" Temannya: \"Karena ayam tidak bisa berpikir lebih jauh!\"",
+            "Pria berkata, \"Hari ini aku kerja sampai malam.\" Temannya: \"Apa kerjaanmu?\" \"Berusaha tidak tidur di kantor!\"",
+            "Pelanggan bertanya ke kasir, \"Ini diskon?\" Kasir: \"Diskon atau tidak, harga tetap naik!\"",
+            "Anak berkata, \"Aku ingin jadi dokter.\" Temannya: \"Kenapa?\" \"Karena dokter punya masa depan cerah, bahkan di rumah sakit!\""
+        ];
+
+        function showAnecdote(index) {
+            document.getElementById("anecdote-container").innerText = anecdotes[index - 1];
+        }
+    </script>
+
+</body>
+</html>
