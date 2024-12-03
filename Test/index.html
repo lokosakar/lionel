@@ -9,58 +9,69 @@
 <body>
     <header>
         <h1>15 Cerita Anekdot Lucu</h1>
-        <p>Berikut adalah kumpulan cerita anekdot yang bisa membuatmu tertawa. Semoga hari-harimu semakin ceria!💖💖</p>
+        <p>Berikut adalah kumpulan cerita anekdot yang bisa membuatmu tertawa. Semoga hari-harimu semakin ceria! 💖💖</p>
     </header>
     
     <section class="anecdotes">
         <div class="button-container">
-            <button onclick="showAnecdote(1)">Lionel liauw</button>
-            <button onclick="showAnecdote(2)">Dikejar anjing</button>
-            <button onclick="showAnecdote(3)">Banyak gaya</button>
-            <button onclick="showAnecdote(4)">Hujan</button>
-            <button onclick="showAnecdote(5)">Jatoh motor 5</button>
-            <button onclick="showAnecdote(6)">Lempar raket</button>
-            <button onclick="showAnecdote(7)">Masuk got</button>
-            <button onclick="showAnecdote(8)">Hp jatoh ke got</button>
-            <button onclick="showAnecdote(9)">Hp hamil</button>
-            <button onclick="showAnecdote(10)">Batagor</button>
-            <button onclick="showAnecdote(11)">Makan ayam bali di sekolah</button>
-            <button onclick="showAnecdote(12)">smp</button>
-            <button onclick="showAnecdote(13)">Masih sd</button>
-            <button onclick="showAnecdote(14)">Pukul anjing</button>
-            <button onclick="showAnecdote(15)">Tendang kucing</button>
+            <!-- Buttons to display anecdotes -->
+            <button class="anecdote-btn" data-index="1">Lionel Liauw</button>
+            <button class="anecdote-btn" data-index="2">Dikejar Anjing</button>
+            <button class="anecdote-btn" data-index="3">Banyak Gaya</button>
+            <button class="anecdote-btn" data-index="4">Hujan</button>
+            <button class="anecdote-btn" data-index="5">Jatoh Motor 5</button>
+            <button class="anecdote-btn" data-index="6">Lempar Raket</button>
+            <button class="anecdote-btn" data-index="7">Masuk Got</button>
+            <button class="anecdote-btn" data-index="8">HP Jatoh ke Got</button>
+            <button class="anecdote-btn" data-index="9">HP Hamil</button>
+            <button class="anecdote-btn" data-index="10">Batagor</button>
+            <button class="anecdote-btn" data-index="11">Makan Babi di Sekolah</button>
+            <button class="anecdote-btn" data-index="12">SMP</button>
+            <button class="anecdote-btn" data-index="13">Pandemi GMeet</button>
+            <button class="anecdote-btn" data-index="14">Pukul Anjing</button>
+            <button class="anecdote-btn" data-index="15">Tendang Kucing</button>
         </div>
         
+        <!-- Container for displaying selected anecdote -->
         <div id="anecdote-container" class="anecdote-content"></div>
     </section>
     
     <footer>
-        <p>&copy; Sungguh bahagia jika kita hidup tanpa membenci di antara orang-orang yang membenci; di antara orang-orang yang membenci, kita hidup tanpa benci</p>
+        <p>&copy; Sungguh bahagia jika kita hidup tanpa membenci di antara orang-orang yang membenci; di antara orang-orang yang membenci, kita hidup tanpa benci.</p>
     </footer>
     
     <script>
         const anecdotes = [
             "Suatu hari saat di Ekayana saya sedang nginep karena volunteer. Saya buka baju karena panas, lalu teman-teman main Uno dengan berisik. Para koor datang, malah mengira saya yang bikin onar. Pagi-pagi, mereka hanya ingat saya buka baju, bukan teman yang main Uno.",
-            "Seorang anak bertanya kepa\"",
-            "Guru bertanya, \"Siapa yang bisa menjelaskan apa itu matematika?\" Seorang murid menjawab, \"Matematika itu seperti hidup. Penuh angka yang terus bertambah!\"",
-            "Pelayan restoran lelah berkata, \"Menjadi pelayan itu seperti hidup, selalu ada di tengah tapi jarang diapresiasi.\" Temannya menjawab, \"Mungkin perlu lebih banyak minta tips!\"",
-            "Seorang anak kecil bertanya pada penjual es krim, \"Kenapa es krim suka meleleh?\" Penjual es krim menjawab, \"Karena dia tidak suka tekanan!\"",
-            "Seorang pria berkendara dengan mobil baru. Temannya berkata, \"Mobil ini bagus, tapi sepertinya butuh rem baru.\" \"Kenapa?\" \"Karena saat kamu berhenti, mobilnya belum siap!\"",
-            "Seorang pria berkata, \"Saya bisa melompat lebih tinggi dari bangunan.\" Temannya terkejut. Pria itu menjawab, \"Iya, bangunan tidak bisa melompat!\"",
-            "Tukang pos berkata, \"Saya selalu mengantarkan surat ke orang yang tepat.\" Pelanggan: \"Tapi ini salah alamat!\" Tukang pos: \"Itu latihan agar tetap sabar.\"",
-            "Siswa berkata, \"Saya benci sekolah!\" Temannya: \"Kenapa?\" \"Karena tiap hari ada tugas baru bikin nggak betah!\"",
-            "Seorang anak berkata, \"Ayah, komputer ini pintar.\" Sang ayah: \"Iya, tapi tidak ingat membuang sampahnya!\"",
-            "Pria bertanya pada polisi, \"Pak, saya melanggar aturan?\" Polisi: \"Tidak, tapi bawa SIM dan STNK, bukan senyum manis saja!\"",
-            "Anak bertanya, \"Kenapa ayam menyebrang jalan?\" Temannya: \"Karena ayam tidak bisa berpikir lebih jauh!\"",
-            "Pria berkata, \"Hari ini aku kerja sampai malam.\" Temannya: \"Apa kerjaanmu?\" \"Berusaha tidak tidur di kantor!\"",
-            "Pelanggan bertanya ke kasir, \"Ini diskon?\" Kasir: \"Diskon atau tidak, harga tetap naik!\"",
-            "Anak berkata, \"Aku ingin jadi dokter.\" Temannya: \"Kenapa?\" \"Karena dokter punya masa depan cerah, bahkan di rumah sakit!\""
+            "Dulu saya lagi di Bogor saya penasaran dengan saung yang beda tempat jadi saya kesitu sendiri lalu tanpa saya sadari ada anjing. Saya takut, kaka koko cici saya samperin cuman mereka dikejar anjing. Lalu saya nangis, papa saya datang dan tolongin saya.",
+            "Dulu saya main sepeda bersama teman lalu saya gaya-gayaan pake sepeda terus, lalu saya coba-coba, lalu saya jatuh dan saya malu.",
+            "Saya saat hujan baru-baru ini saya maen hujan-hujanan. Waktu itu saya ingin maen badminton di Angke, lalu saya berdua bersama Xues. Saat lagi naik motor, saya Xues buka baju, lalu kita di foto oleh kamera di jalan.",
+            "Saya sama Austin waktu itu bawa motor 5 bersama teman-teman nya, lalu saya ke PBSI. Saya sakit soalnya setiap terkena ajukan dada saya ketabrak motor nya Austin.",
+            "Dulu saya di Bogor, saya sok jago badminton waktu itu saya masih cupu. Lalu saya dengan kemikiran jarjit sing, saya pukul kenceng, kok nya. Lalu saya lempar raket biar terlihat keren, lalu raket itu kena koko saya.",
+            "Masuk got, saya waktu perpisahan kelas 9 saya banyak gaya. Saya di depan sekolah, saat mau ke Gajah Mada makan Golden Lamian, saya mundur abis itu jatoh 1 kaki ke got depan Talib Residence. Lalu saya sakit rahan, sakit kaki, sakit badan.",
+            "Saya waktu itu ingin kerumah teman untuk latihan tangled, yaitu latihan drama gitu. Tapi pas itu teman saya tidak sengaja menepak tangan saya yang ada HP, lalu HP-nya gelinding masuk got.",
+            "Waktu itu saya lagi mau ngumpul, HP tiba-tiba HP saya belakangnya ada benjolan seperti orang hamil 😂😂😂.",
+            "Jadi waktu itu ketika saya sedang beli batagor, saya melihat Pak Aji sedang ngobrol dan bilang batagor vege, lalu saya juga beli batagor deh jadinya.",
+            "Jadi saya dulu di sekolah, saya pas itu tiba-tiba membawa bekal yang membawa daging babi. Lalu tiba-tiba guru saya masuk ke kelas bernama Bu Listi, lalu saya ngeles ini daging vege. Lalu guru saya nanya, bener daging vege, lalu saya bilang, saya rasa si daging ya Bu.",
+            "Saya dulu waktu SMP sering pulang jam 6, lalu saya pernah nggak beri kabar. Lalu mama saya telepon guru saya, saya pas itu bareng Austin. Lalu di grup saya Pak Imam chat, apakah ada yang liat Lionel.",
+            "Saya pas pandemi waktu SMP kelas 7, saya sering madol, tapi saat saya join pelajaran BI, saya izin ke WC buang air besar. Lalu saya main game, akhirnya saya di telepon suruh masuk GMeet, lalu saya ajak debat gurunya bilang, masa di toilet saya bawa jam.",
+            "Saya waktu itu di gubuk, saya liat anjing lalu saya takut sampai nangis. Sampai 1 keluarga yang datang.",
+            "Saya dulu sering banget tendang kucing ke got. Jadi kalau kucing basa saya senang, kakakakakka."
         ];
 
+        // Event listener for button clicks
+        document.querySelectorAll('.anecdote-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const index = this.getAttribute('data-index');
+                showAnecdote(index);
+            });
+        });
+
+        // Function to display the selected anecdote
         function showAnecdote(index) {
-            document.getElementById("anecdote-container").innerText = anecdotes[index - 1];
+            const anecdoteText = anecdotes[index - 1];
+            document.getElementById("anecdote-container").innerText = anecdoteText;
         }
     </script>
-
 </body>
 </html>
